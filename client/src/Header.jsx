@@ -9,7 +9,7 @@ const Header = () => {
       <header className="flex justify-between">
         {/* logo */}
 
-        <a href="" className="flex items-center gap-1">
+        <Link to={'/'} className="flex items-center gap-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -26,7 +26,7 @@ const Header = () => {
           </svg>
 
           <span className="font-bold text-xl">airlnh</span>
-        </a>
+        </Link>
 
         {/* Search */}
 
@@ -57,7 +57,7 @@ const Header = () => {
         {/* user */}
 
         <Link
-          to={"/login"}
+          to={user?'/account':"/login"}
           className="flex items-center border gap-2 border-gray-300 rounded-full py-2 px-4"
         >
           <svg
